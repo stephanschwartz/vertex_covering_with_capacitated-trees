@@ -14,13 +14,13 @@ This online supplement provides instances and detailed results of the computatio
 For the computational study, we generated two types of random transit networks with artificial traffic volume: random trees, and random networks based on Voronoi diagrams.
 We provide here the original transit networks as well as the line graph versions (labelled with "_lg") . The instances are generated with our [transit network generator](https://github.com/stephanschwartz/transit_network_generator).
 
-#### trees
+#### Trees
 The 25 tree instances are built from random points in a rectangle by using
 Kruskal's algorithm on the complete graph with Euclidean edge weights.
 The assigned traffic is a combination of random origin-destination traffic and
 traffic obtained by a gravity model.
 
-#### Voronoi networks
+#### Voronoi Networks
 For these instances, we create a Voronoi diagram and 
 consider the graph that is spanned
 by the ridges between the Voronoi cells. This is our basic Voronoi
@@ -30,7 +30,12 @@ nodes, and stretch each edge by a random factor.
 The artificial traffic is generated as for the random trees.
 The 50 generated instances are split into two groups: 33 of medium size and 17 large instances.
 
-
+#### How to load an instance (in Python using networkx)
+```
+import networkx as nx
+path_to_file = 'instances/tree/tree_1.graphml'
+graph = nx.read_graphml(path_to_file, node_type=int)
+```
 
 ## Detailed Results
 We present detailed results of our computational study for all generated instances. In particular we report on the following outputs that are explained in the paper.
