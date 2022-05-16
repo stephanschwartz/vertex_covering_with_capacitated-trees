@@ -8,7 +8,7 @@ Zuse Institute Berlin, Takustr 7, 14195 Berlin
 
 ---
 
-This online supplement provides instances and detailed results of the computational experiments conducted for the paper "Vertex Covering with Capacitated Trees". A preprint is available as [technical report](https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/8261) published by Zuse Institute Berlin, 2021.
+This online supplement provides instances and detailed results of the computational experiments conducted for the paper "Vertex Covering with Capacitated Trees". A preprint is available as [technical report](https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/8261) published by Zuse Institute Berlin, 2021 and all details concerning this version are located in the "preprint" directory.
 
 ## Instances
 For the computational study, we generated two types of random transit networks with artificial traffic volume: random trees, and random networks based on Voronoi diagrams.
@@ -64,4 +64,12 @@ Computation times for
    - median induced preprocessing (P)
    - local search (L)
 
+* branch-and-price approach
+
+   - number of branching nodes
+   - B&P-time
+   - root solution time
+   - gap after B&P
+   - gap for root solution
+ 
 For the computation times, a time limit of 24 hours (i.e., 86400 seconds) was set.
