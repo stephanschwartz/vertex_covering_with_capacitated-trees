@@ -1,4 +1,4 @@
-num_nodes,num_edges,treewidth,frac_bridges,is_planar
+instance,num_nodes,num_edges,treewidth,frac_bridges,is_planar
 tree_lg_1,199,239,3,0.51,1
 tree_lg_2,199,245,3,0.46,1
 tree_lg_3,199,242,3,0.47,1
